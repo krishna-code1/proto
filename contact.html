@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Biodiesel Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">🌱 Biodiesel Project</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="process.html" class="nav-link">Process</a></li>
+                <li><a href="applications.html" class="nav-link">Applications</a></li>
+                <li><a href="benefits.html" class="nav-link">Benefits</a></li>
+                <li><a href="future.html" class="nav-link">Future Scope</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <h1 class="page-title fade-in-up">Contact Us</h1>
+            <p class="page-subtitle fade-in-up">Get in Touch with Our Team</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper slide-in-left">
+                    <h2>Send us a Message</h2>
+                    <p class="form-description">
+                        Have questions about our biodiesel project? We'd love to hear from you. 
+                        Fill out the form below and we'll get back to you as soon as possible.
+                    </p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Enter your name"
+                                required
+                            >
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="+91 9391873887"
+                            >
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">Project Collaboration</option>
+                                <option value="technical">Technical Questions</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                placeholder="Tell us more about your inquiry..."
+                                required
+                            ></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon">📨</span>
+                        </button>
+                    </form>
+
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting us. We'll get back to you soon.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-wrapper slide-in-right">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Address</h3>
+                        <p>Department of Chemical Engineering<br>
+                        Institute of Technology<br>
+                        Mumbai, Maharashtra 400001<br>
+                        India</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>
+                            <a href="mailto:2020401040087@mitaoe.ac.in">2020401040087@mitaoe.ac.in</a><br>
+                
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p>
+                            9391873887<br>
+            
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h3>Office Hours</h3>
+                        <p>
+                            Monday - Friday: 9:00 AM - 5:00 PM<br>
+                            Saturday: 10:00 AM - 2:00 PM<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">📘</a>
+                            <a href="https://x.com/?lang=en-in" class="social-icon">🐦</a>
+                            <a href="https://www.instagram.com/" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">📷</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Contact -->
+    <section class="team-contact-section">
+        <div class="container">
+            <h2 class="section-title slide-in-left">Meet the Team</h2>
+            <div class="team-contact-grid fade-in-cards">
+                <div class="team-contact-card">
+                    <div class="team-contact-avatar">👨‍🏫</div>
+                    <h3>Dr. Abhijit Patil</h3>
+                    <p class="team-contact-role">Project Guide</p>
+                    <p class="team-contact-dept">Associate Professor</p>
+                </div>
+
+                <div class="team-contact-card">
+                    <div class="team-contact-avatar">👨‍🎓</div>
+                    <h3>Krishnakant Kolnure</h3>
+                    <p class="team-contact-role">Team Leader</p>
+                    <p class="team-contact-dept">Roll No: 252</p>
+                    <a href="mailto:202401040087@mkitaoe.ac.in" class="team-contact-email">
+                        📧 202401040087@mitaoe.ac.in
+                    </a>
+                </div>
+
+                <div class="team-contact-card">
+                    <div class="team-contact-avatar">👩‍🎓</div>
+                    <h3>Swanand Aher</h3>
+                    <p class="team-contact-role">Management head</p>
+                    <p class="team-contact-dept">Roll No: 254</p>
+                    <a href="mailto:2020401040087@mitaoe.ac.in" class="team-contact-email">
+                        📧 2020401040192@mitaoe.ac.in
+                    </a>
+                </div>
+
+                <div class="team-contact-card">
+                    <div class="team-contact-avatar">👨‍🎓</div>
+                    <h3>Akash Sanap</h3>
+                    <p class="team-contact-role">Reasercher</p>
+                    <p class="team-contact-dept">Roll No: 255</p>
+                    <a href="mailto:2020401040093@mitaoe.ac.in" class="team-contact-email">
+                        📧 2020401040093@mitaoe.ac.in
+                    </a>
+                </div>
+                <div class="team-contact-card">
+                    <div class="team-contact-avatar">👨‍🎓</div>
+                    <h3>Swapnil Kamble</h3>
+                    <p class="team-contact-role">Technical</p>
+                    <p class="team-contact-dept">Roll No: 258</p>
+                    <a href="mailto:2020401040106@mitaoe.ac.in" class="team-contact-email">
+                        📧 2020401040106@mitaoe.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Biodiesel Project. All rights reserved.</p>
+            <p>Created for Academic Purposes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
